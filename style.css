@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  background-color: #f7f9fb;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+}
+
+header > img {
+  width: 46px;
+  height: 46px;
+}
+
+header > nav {
+  display: flex;
+  gap: 40px;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  padding: 16px 36px;
+}
+
+header > nav a,
+header > div:last-child {
+  display: grid;
+  justify-items: center;
+}
+
+header > nav a {
+  font-weight: bold;
+}
+
+header > form {
+  display: flex;
+}
+
+header > form i {
+  margin-right: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+header > form input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+header > form input::placeholder {
+  color: #cecece;
+}
+
+header > div:first-of-type {
+  display: flex;
+  gap: 16px;
+}
+
+header > div:first-of-type > img {
+  width: 42px;
+  height: 42px;
+}
+
+header > div:first-of-type > div {
+  display: grid;
+  gap: 10px;
+}
+
+header > div:first-of-type > div > div:first-child > span:first-child {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+header > div:first-of-type > div > div:first-child > span:last-child {
+  color: #18181833;
+}
+
+header > div:first-of-type > div > div:last-child > span:last-child {
+  color: #02b033;
+}
