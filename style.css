@@ -4,11 +4,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #181818;
 }
 
 a {
   text-decoration: none;
-  color: #000;
 }
 
 body {
@@ -23,36 +23,39 @@ img {
 
 header {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   background-color: #fff;
 }
 
 header > img {
-  width: 46px;
-  height: 46px;
+  padding: 16px 40px;
+  cursor: pointer;
 }
 
 header > nav {
   display: flex;
-  gap: 40px;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
-  padding: 16px 36px;
+  border-right: 1px solid #f4f4f4;
+  border-left: 1px solid #f4f4f4;
 }
 
 header > nav a,
-header > div:last-child {
+header > a {
   display: grid;
   justify-items: center;
+  font-weight: bold;
+  padding: 16px 40px;
+  transition: 0.3s;
 }
 
-header > nav a {
-  font-weight: bold;
+header > nav a:hover,
+header > a:hover {
+  background-color: #f4f4f4;
 }
 
 header > form {
   display: flex;
+  align-items: center;
+  padding: 0 40px;
+  border-right: 1px solid #f4f4f4;
 }
 
 header > form i {
@@ -67,34 +70,55 @@ header > form input {
   font-size: 16px;
 }
 
+header > form input:focus {
+  border-bottom: 1px solid #181818;
+}
+
 header > form input::placeholder {
   color: #cecece;
 }
 
-header > div:first-of-type {
+header > div {
   display: flex;
   gap: 16px;
+  padding: 16px 100px 16px 32px;
+  border-right: 1px solid #f4f4f4;
 }
 
-header > div:first-of-type > img {
-  width: 42px;
-  height: 42px;
-}
-
-header > div:first-of-type > div {
+header > div > div {
   display: grid;
   gap: 10px;
 }
 
-header > div:first-of-type > div > div:first-child > span:first-child {
+header > div > div > div:first-child {
+  display: flex;
+  gap: 10px;
   font-weight: bold;
-  margin-right: 10px;
 }
 
-header > div:first-of-type > div > div:first-child > span:last-child {
+header > div > div > div:first-child > span:last-child {
   color: #18181833;
 }
 
-header > div:first-of-type > div > div:last-child > span:last-child {
+header > div > div > div:last-child {
+  white-space: nowrap;
+}
+
+header > div > div > div:last-child > span {
+  color: #747474;
+  display: flex;
+  gap: 4px;
+}
+
+header > div > div > div:last-child > span > span {
   color: #02b033;
+  font-weight: bold;
+}
+
+/* header > div > div > div:last-child > span:last-child::after {
+} */
+
+header > a {
+  border-right: 1px solid #f4f4f4;
+  padding: 16px 24px;
 }
