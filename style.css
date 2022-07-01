@@ -51,6 +51,21 @@ header > a:hover {
 	background-color: #f4f4f4;
 }
 
+header > nav > a:nth-child(4) i {
+	position: relative;
+}
+
+header > nav > a:nth-child(4) i::after {
+	content: '';
+	background: url(./img/count.svg);
+	display: inline-block;
+	position: absolute;
+	right: -5px;
+	top: -5px;
+	width: 16px;
+	height: 16px;
+}
+
 header > form {
 	display: flex;
 	align-items: center;
@@ -115,9 +130,6 @@ header > div > div > div:last-child > span > span {
 	font-weight: bold;
 }
 
-/* header > div > div > div:last-child > span:last-child::after {
-} */
-
 header > a {
 	border-right: 1px solid #f4f4f4;
 	padding: 16px 24px;
@@ -126,7 +138,7 @@ header > a {
 /* ---- PROFILE ----- */
 main {
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: 40px auto;
 	display: grid;
 	grid-template-columns: 850px 290px;
 	justify-items: center;
