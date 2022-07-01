@@ -11,6 +11,10 @@ a {
 	text-decoration: none;
 }
 
+li {
+	list-style: none;
+}
+
 body {
 	background-color: #f7f9fb;
 	font-family: 'Montserrat', sans-serif;
@@ -21,11 +25,30 @@ img {
 	max-width: 100%;
 }
 
+button {
+	cursor: pointer;
+}
+
+.blue-link {
+	color: #0275b1;
+	font-weight: bold;
+}
+
+.blue-link:hover {
+	text-decoration: underline;
+}
+
 .container {
 	display: grid;
 	grid-template-columns: 3fr 1fr;
 	gap: 40px;
 	padding: 40px 130px;
+}
+
+main {
+	display: grid;
+	align-content: start;
+	gap: 20px;
 }
 
 header {
@@ -270,6 +293,53 @@ button {
 	cursor: pointer;
 }
 
+/* About */
+.about > div:first-child > ul {
+	display: flex;
+	align-items: flex-end;
+	font-weight: bold;
+}
+
+.about > div:first-child > ul li {
+	background-color: #fff;
+	padding: 8px 32px;
+	border: 1px solid #e7e7e7;
+	cursor: pointer;
+	width: 240px;
+	text-align: center;
+}
+
+.about > div:first-child > ul li:first-child {
+	background: linear-gradient(180deg, #0077b5 0%, #0e6795 100%);
+	padding: 14px 64px;
+	border-radius: 4px 4px 0 0;
+	border: none;
+}
+
+.about > div:first-child > ul li:last-child {
+	border-radius: 0 4px 0 0;
+}
+
+.about > div:first-child > ul li:first-child a {
+	color: #fff;
+}
+
+.about > div:last-child {
+	background-color: #fff;
+	padding: 60px 24px 36px;
+	border-radius: 0 4px 4px 4px;
+}
+
+.about > div:last-child > h3 {
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+
+.about > div:last-child > p {
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
 /* Aside */
 aside {
 	display: grid;
@@ -294,7 +364,6 @@ aside {
 	border-bottom: 1px solid #f4f4f4;
 }
 
-.dashboard a,
 .visitors a,
 .courses a {
 	color: #0275b1;
