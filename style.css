@@ -732,6 +732,73 @@ aside h5:hover {
 	cursor: pointer;
 }
 
+/* POSTS */
+
+.posts > div {
+	background-color: white;
+	padding: 4px;
+}
+
+.posts > div > div:first-child {
+	padding: 15px;
+	border-bottom: 1px solid #f4f4f4;
+	display: flex;
+	justify-content: space-between;
+}
+
+.posts > div > div:first-child small {
+	font-size: 12px;
+	color: #181818;
+}
+
+.posts > div > div:first-child a {
+	color: #0275b1;
+}
+
+.posts > div > div:first-child a:hover {
+	text-decoration: underline;
+}
+
+.posts > div > div:nth-child(2) {
+	display: flex;
+	padding: 15px 30px;
+	align-items: center;
+}
+
+.posts > div > div:nth-child(2) > div {
+	margin-left: 15px;
+}
+
+.posts > div > div:nth-child(2) > div p {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.posts > div > div:nth-child(2) > div small {
+	font-size: 12px;
+}
+
+.posts > div > div:nth-child(3) {
+	padding: 0 30px;
+}
+
+.posts > div > a {
+	padding: 30px;
+}
+
+.posts > div > div:last-child {
+	padding: 30px;
+}
+
+.posts > div > div:last-child {
+	display: flex;
+	justify-content: space-between;
+}
+
+.posts > div > div:last-child > div a {
+	margin-right: 20px;
+}
+
 /* -------- footer --------- */
 footer {
 	height: 215px;
