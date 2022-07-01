@@ -1,300 +1,418 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./style.css" />
-		<title>Feed</title>
-	</head>
 
-	<body>
-		<header>
-			<img src="./img/Logo.svg" alt="logo" />
-			<nav>
-				<a href="#">
-					<i>
-						<img src="./img/rss.svg" alt="" />
-					</i>
-					<span>FEED</span>
-				</a>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./style.css" />
+	<title>Feed</title>
+</head>
 
-				<a href="#">
-					<i>
-						<img src="./img/users.svg" alt="" />
-					</i>
-					<span>NETWORK</span>
-				</a>
-
-				<a href="#">
-					<i>
-						<img src="./img/briefcase.svg" alt="" />
-					</i>
-					<span>JOBS</span>
-				</a>
-
-				<a href="#">
-					<i>
-						<img src="./img/message-square.svg" alt="" />
-					</i>
-					<span>CHAT</span>
-				</a>
-
-				<a href="#">
-					<i>
-						<img src="./img/bell.svg " alt="" />
-					</i>
-					<span>NOTICES</span>
-				</a>
-			</nav>
-
-			<form>
+<body>
+	<header>
+		<img src="./img/Logo.svg" alt="logo" />
+		<nav>
+			<a href="#">
 				<i>
-					<img src="./img/search.svg" alt="" />
+					<img src="./img/rss.svg" alt="" />
 				</i>
-				<input type="text" placeholder="Search" />
-			</form>
-
-			<div>
-				<img src="./img/Rectangle.png" alt="" />
-				<div>
-					<div>
-						<span>D. KARGAEV</span>
-						<span>YOU</span>
-					</div>
-					<div>
-						<span
-							>367 views today <span>+32</span
-							><img src="./img/arrow-up-right.svg" alt=""
-						/></span>
-					</div>
-				</div>
-			</div>
+				<span>FEED</span>
+			</a>
 
 			<a href="#">
 				<i>
-					<img src="./img/more-horizontal.svg" alt="" />
+					<img src="./img/users.svg" alt="" />
 				</i>
-				<span>OTHER</span>
+				<span>NETWORK</span>
 			</a>
-		</header>
 
-		<div class="container">
-			<main>
-				<!-- New Post -->
-				<section class="new-post">
-					<h4>NEW POST</h4>
-					<div>
-						<form>
-							<input type="text" placeholder="What’s on your mind?" />
-						</form>
-						<div>
-							<img src="./img/paperclip.png" alt="Clip" />
-							<img src="./img/image.png" alt="Imagem" />
-							<img src="./img/film.png" alt="Video" />
-							<img src="./img/send.png" alt="Enviar" />
-						</div>
-					</div>
-				</section>
+			<a href="#">
+				<i>
+					<img src="./img/briefcase.svg" alt="" />
+				</i>
+				<span>JOBS</span>
+			</a>
 
-				<div class="sort">
-					<form>
-						<label for="sort">SORT BY: </label>
-						<select name="sort" id="sort">
-							<option value="en">TRENDING</option>
-							<option value="pt">RECENT</option>
-						</select>
-					</form>
+			<a href="#">
+				<i>
+					<img src="./img/message-square.svg" alt="" />
+				</i>
+				<span>CHAT</span>
+			</a>
+
+			<a href="#">
+				<i>
+					<img src="./img/bell.svg " alt="" />
+				</i>
+				<span>NOTICES</span>
+			</a>
+		</nav>
+
+		<form>
+			<i>
+				<img src="./img/search.svg" alt="" />
+			</i>
+			<input type="text" placeholder="Search" />
+		</form>
+
+		<div>
+			<img src="./img/Rectangle.png" alt="" />
+			<div>
+				<div>
+					<span>D. KARGAEV</span>
+					<span>YOU</span>
 				</div>
-
-				<!-- POSTS -->
-				<section class="posts">
-					<div>
-						<div>
-							<small>
-								<a href="#">Ted Bell</a>, <a href="#">Annette Nguyen</a> and
-								<a href="#">Cody Hawkins</a> liked this
-							</small>
-							<a href="#"><img src="./img/more-horizontal.svg" alt="" /></a>
-						</div>
-
-						<div>
-							<img src="./img/photoTheresa.png" alt="Foto do usuário" />
-							<div>
-								<p>Theresa Steward</p>
-								<small>iOS developer</small>
-							</div>
-						</div>
-
-						<div>
-							<p>
-								What did the Dursleys care if Harry lost his place on the House
-								Quidditch team because he hadn’t practiced all summer? What was
-								it to the Dursleys if Harry went back to school without any of
-								his homework done? The Dursleys were what wizards called Muggles
-								(not a drop of magical blood in their veins).
-							</p>
-						</div>
-
-						<a href="#" class="blue-link">READ MORE</a>
-
-						<div>
-							<div>
-								<a href="#"><img src="./img/thumbsUp.png" alt="" />42</a>
-								<a href="#"><img src="./img/messageCircle.png" alt="" />9</a>
-							</div>
-							<a href="#"><img src="./img/share2.png" alt="" />SHARE</a>
-						</div>
-					</div>
-				</section>
-			</main>
-
-			<aside>
-				<section class="profile-mini">
-					<img src="./img/userImg1.png" alt="" />
-					<a href="./index.html">
-						<h5>
-							Dmitry Kargaev <i><img src="./img/Logo.png" alt="" /></i>
-						</h5>
-					</a>
-					<p>
-						Freelance UX/UI designer, 80+ projects in web design, mobile apps
-						(iOS & android) and creative projects. Open to offers.
-					</p>
-				</section>
-
-				<section class="new-article">
-					<button class="primary">WRITE NEW ARTICLE</button>
-				</section>
-
-				<section class="groups">
-					<div>
-						<h4>MY GROUPS</h4>
-						<h4><a href="" class="blue-link">EDIT LIST</a></h4>
-					</div>
-
-					<div>
-						<a href="">
-							<img src="./img/Groups.png" alt="" />
-							<h5>Moscow State Linguistical University</h5>
-						</a>
-
-						<a href="">
-							<img src="./img/Groups1.png" alt="" />
-							<h5>Digital freelancers group</h5>
-						</a>
-
-						<a href="">
-							<img src="./img/Groups2.png" alt="" />
-							<h5>Interaction design association</h5>
-						</a>
-					</div>
-					<a href="" class="blue-link">SHOW ALL (8)</a>
-				</section>
-
-				<!-- Hashtags -->
-				<section class="hashtags">
-					<div>
-						<h4>FOLLOWED HASHTAGS</h4>
-					</div>
-					<div>
-						<a href="">#work</a>
-						<a href="">#busines</a>
-						<a href="">#hr</a>
-						<a href="">#userinterface</a>
-						<a href="">#digital</a>
-						<a href="">#userexperience</a>
-						<a href="">#ux</a>
-						<a href="">#ui</a>
-						<a href="">#freelance</a>
-					</div>
-				</section>
-
-				<!-- Trnding -->
-				<section class="trending">
-					<div>
-						<h4>TRENDING ARTICLES</h4>
-					</div>
-
-					<div>
-						<div>
-							<a href="">
-								<img src="./img/art.png" alt="" />
-								<div>
-									<h5>How I make cool designs?</h5>
-									<span>6,340 viewers</span>
-								</div>
-							</a>
-						</div>
-
-						<div>
-							<a href="">
-								<img src="./img/art1.png" alt="" />
-								<div>
-									<h5>Advices for young HR-manage</h5>
-									<span>8,123 viewers</span>
-								</div>
-							</a>
-						</div>
-
-						<div>
-							<a href="">
-								<img src="./img/art2.png" alt="" />
-								<div>
-									<h5>A little about usability testing</h5>
-									<span>3,912 viewers</span>
-								</div>
-							</a>
-						</div>
-					</div>
-				</section>
-			</aside>
+				<div>
+					<span>367 views today <span>+32</span><img src="./img/arrow-up-right.svg" alt="" /></span>
+				</div>
+			</div>
 		</div>
 
-		<footer>
-			<div>
-				<img src="./img/Logo.svg" alt="Linkedin logo" />
-				<img src="./img/LinkedIn.png" alt="Linkedin" />
-			</div>
+		<a href="#">
+			<i>
+				<img src="./img/more-horizontal.svg" alt="" />
+			</i>
+			<span>OTHER</span>
+		</a>
+	</header>
 
-			<div>
-				<h6>Navigation</h6>
-				<nav>
-					<a href="#">About</a>
-					<a href="#">Careers</a>
-					<a href="#">Advertising</a>
-					<a href="#">Small Business</a>
-					<a href="#">Talent Solutions</a>
-					<a href="#">Marketing Solutions</a>
-					<a href="#">Sales Solutions</a>
-					<a href="#">Safery Center</a>
-					<a href="#">Community Guidelines</a>
-					<a href="#">Privacy & Terms</a>
-					<a href="#">Mobile App</a>
-				</nav>
-			</div>
+	<div class="container">
+		<main>
+			<!-- New Post -->
+			<section class="new-post">
+				<h4>NEW POST</h4>
+				<div>
+					<form>
+						<input type="text" placeholder="What’s on your mind?" />
+					</form>
+					<div>
+						<img src="./img/paperclip.png" alt="Clip" />
+						<img src="./img/image.png" alt="Imagem" />
+						<img src="./img/film.png" alt="Video" />
+						<img src="./img/send.png" alt="Enviar" />
+					</div>
+				</div>
+			</section>
 
-			<div>
-				<h6>Fast Access</h6>
-				<button class="primary">
-					Questions?
-					<img src="./img/helpCircle.png" alt="Help Icon" />
-				</button>
-				<button class="secondary">
-					Settings
-					<img src="./img/settings.png" alt="Settings Icon" />
-				</button>
-			</div>
-
-			<div>
-				<h6>Language</h6>
+			<div class="sort">
 				<form>
-					<select name="language" id="language">
-						<option value="en">ENGLISH</option>
-						<option value="pt">PORTUGUESE</option>
+					<label for="sort">SORT BY: </label>
+					<select name="sort" id="sort">
+						<option value="en">TRENDING</option>
+						<option value="pt">RECENT</option>
 					</select>
 				</form>
 			</div>
-		</footer>
-	</body>
+
+			<!-- POSTS -->
+			<section class="posts">
+				<!-- Post 1 -->
+				<div>
+					<div>
+						<small>
+							<a href="#">Ted Bell</a>, <a href="#">Annette Nguyen</a> and
+							<a href="#">Cody Hawkins</a> liked this
+						</small>
+						<a href="#"><img src="./img/more-horizontal.svg" alt="" /></a>
+					</div>
+
+					<div>
+						<img src="./img/photoTheresa.png" alt="Foto do usuário" />
+						<div>
+							<p>Theresa Steward</p>
+							<small>iOS developer</small>
+						</div>
+					</div>
+
+					<div>
+						<p>
+							What did the Dursleys care if Harry lost his place on the House
+							Quidditch team because he hadn’t practiced all summer? What was
+							it to the Dursleys if Harry went back to school without any of
+							his homework done? The Dursleys were what wizards called Muggles
+							(not a drop of magical blood in their veins).
+						</p>
+					</div>
+
+					<a href="#" class="blue-link">READ MORE</a>
+
+					<div>
+						<div>
+							<a href="#"><img src="./img/thumbsUp.png" alt="" />42</a>
+							<a href="#"><img src="./img/messageCircle.png" alt="" />9</a>
+						</div>
+						<a href="#"><img src="./img/share2.png" alt="" />SHARE</a>
+					</div>
+				</div>
+
+				<!-- Post 2 -->
+				<div>
+					<div>
+						<small>
+							<a href="#">Audrey Alexander</a> commented this
+						</small>
+						<a href="#"><img src="./img/more-horizontal.svg" alt="" /></a>
+					</div>
+
+					<div>
+						<img src="./img/photoKyle.png" alt="Foto do usuário" />
+						<div>
+							<p>Kyle Fisher</p>
+							<small>Product designer at Commandor Corp.</small>
+						</div>
+					</div>
+
+					<div>
+						<p>
+							How’s your day going, guys?
+						</p>
+						<img src="./img/Rectangle3.png" alt="">
+					</div>
+
+					<div>
+						<div>
+							<a href="#"><img src="./img/likeFull.png" alt="" />42</a>
+							<a href="#"><img src="./img/messageCircle.png" alt="" />9</a>
+						</div>
+						<a href="#"><img src="./img/share2.png" alt="" />SHARE</a>
+					</div>
+				</div>
+
+				<!-- Post 3 -->
+				<div>
+					<div>
+						<small>
+							High rated post from your feed
+						</small>
+						<a href="#"><img src="./img/more-horizontal.svg" alt="" /></a>
+					</div>
+
+					<div>
+						<img src="./img/photoBrandon.png" alt="Foto do usuário" />
+						<div>
+							<p>Brandon Wilson</p>
+							<small>Senior UX designer</small>
+						</div>
+					</div>
+
+					<div>
+						<p>
+							There is some new guidelines for iOS
+						</p>
+						<div>
+							<div>
+								<img src="./img/file.png" alt="arquivo">
+								<div>
+									<p>iOS 11 guidelines for UX/UI designers</p>
+									<span>PDF file, 324 kb</span>
+								</div>
+							</div>
+							<img src="./img/download-cloud.png" alt="download">
+						</div>
+
+						<div>
+							<div>
+								<img src="./img/file.png" alt="arquivo">
+								<div>
+									<p>iOS 11 guidelines for developers</p>
+									<span>PDF file, 245 kb</span>
+								</div>
+							</div>
+							<img src="./img/download-cloud.png" alt="download">
+						</div>
+					</div>
+
+					<div>
+						<div>
+							<a href="#"><img src="./img/likeFull.png" alt="" />42</a>
+							<a href="#"><img src="./img/messageCircleFull.png" alt="" />9</a>
+						</div>
+						<a href="#"><img src="./img/share2.png" alt="" />SHARE</a>
+					</div>
+				</div>
+
+				<!-- Post 4 -->
+				<div>
+					<div>
+						<small>
+							First post from <a href="#">Audrey Alexander</a>
+						</small>
+						<a href="#"><img src="./img/more-horizontal.svg" alt="" /></a>
+					</div>
+
+					<div>
+						<img src="./img/photoAudrey.png" alt="Foto do usuário" />
+						<div>
+							<p>Audrey Alexander</p>
+							<small>Team lead at Google</small>
+						</div>
+					</div>
+
+					<div>
+						<p>
+							The bun runs along the road and meets a wolf. «Little bun, little bun, I want to eat you!» says the wolf. «I ran away from Grandfather, I ran away from Grandmother, I ran away from the hare. And I can run away from you, grey wolf!» says the bun and runs away.
+						</p>
+					</div>
+
+					<div>
+						<div>
+							<a href="#"><img src="./img/thumbsUp.png" alt="" />42</a>
+							<a href="#"><img src="./img/messageCircle.png" alt="" />9</a>
+						</div>
+						<a href="#"><img src="./img/share2.png" alt="" />SHARE</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<aside>
+			<section class="profile-mini">
+				<img src="./img/userImg1.png" alt="" />
+				<a href="./index.html">
+					<h5>
+						Dmitry Kargaev <i><img src="./img/Logo.png" alt="" /></i>
+					</h5>
+				</a>
+				<p>
+					Freelance UX/UI designer, 80+ projects in web design, mobile apps
+					(iOS & android) and creative projects. Open to offers.
+				</p>
+			</section>
+
+			<section class="new-article">
+				<button class="primary">WRITE NEW ARTICLE</button>
+			</section>
+
+			<section class="groups">
+				<div>
+					<h4>MY GROUPS</h4>
+					<h4><a href="" class="blue-link">EDIT LIST</a></h4>
+				</div>
+
+				<div>
+					<a href="">
+						<img src="./img/Groups.png" alt="" />
+						<h5>Moscow State Linguistical University</h5>
+					</a>
+
+					<a href="">
+						<img src="./img/Groups1.png" alt="" />
+						<h5>Digital freelancers group</h5>
+					</a>
+
+					<a href="">
+						<img src="./img/Groups2.png" alt="" />
+						<h5>Interaction design association</h5>
+					</a>
+				</div>
+				<a href="" class="blue-link">SHOW ALL (8)</a>
+			</section>
+
+			<!-- Hashtags -->
+			<section class="hashtags">
+				<div>
+					<h4>FOLLOWED HASHTAGS</h4>
+				</div>
+				<div>
+					<a href="">#work</a>
+					<a href="">#busines</a>
+					<a href="">#hr</a>
+					<a href="">#userinterface</a>
+					<a href="">#digital</a>
+					<a href="">#userexperience</a>
+					<a href="">#ux</a>
+					<a href="">#ui</a>
+					<a href="">#freelance</a>
+				</div>
+			</section>
+
+			<!-- Trnding -->
+			<section class="trending">
+				<div>
+					<h4>TRENDING ARTICLES</h4>
+				</div>
+
+				<div>
+					<div>
+						<a href="">
+							<img src="./img/art.png" alt="" />
+							<div>
+								<h5>How I make cool designs?</h5>
+								<span>6,340 viewers</span>
+							</div>
+						</a>
+					</div>
+
+					<div>
+						<a href="">
+							<img src="./img/art1.png" alt="" />
+							<div>
+								<h5>Advices for young HR-manage</h5>
+								<span>8,123 viewers</span>
+							</div>
+						</a>
+					</div>
+
+					<div>
+						<a href="">
+							<img src="./img/art2.png" alt="" />
+							<div>
+								<h5>A little about usability testing</h5>
+								<span>3,912 viewers</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+		</aside>
+	</div>
+
+	<footer>
+		<div>
+			<img src="./img/Logo.svg" alt="Linkedin logo" />
+			<img src="./img/LinkedIn.png" alt="Linkedin" />
+		</div>
+
+		<div>
+			<h6>Navigation</h6>
+			<nav>
+				<a href="#">About</a>
+				<a href="#">Careers</a>
+				<a href="#">Advertising</a>
+				<a href="#">Small Business</a>
+				<a href="#">Talent Solutions</a>
+				<a href="#">Marketing Solutions</a>
+				<a href="#">Sales Solutions</a>
+				<a href="#">Safery Center</a>
+				<a href="#">Community Guidelines</a>
+				<a href="#">Privacy & Terms</a>
+				<a href="#">Mobile App</a>
+			</nav>
+		</div>
+
+		<div>
+			<h6>Fast Access</h6>
+			<button class="primary">
+				Questions?
+				<img src="./img/helpCircle.png" alt="Help Icon" />
+			</button>
+			<button class="secondary">
+				Settings
+				<img src="./img/settings.png" alt="Settings Icon" />
+			</button>
+		</div>
+
+		<div>
+			<h6>Language</h6>
+			<form>
+				<select name="language" id="language">
+					<option value="en">ENGLISH</option>
+					<option value="pt">PORTUGUESE</option>
+				</select>
+			</form>
+		</div>
+	</footer>
+</body>
+
 </html>
