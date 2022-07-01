@@ -1,31 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	color: #181818;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #181818;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 body {
-	background-color: #f7f9fb;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 12px;
+  background-color: #f7f9fb;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
 }
 
 img {
-	max-width: 100%;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.blue-link {
+  color: #0275b1;
+  font-weight: bold;
+}
+
+.blue-link:hover {
+  text-decoration: underline;
 }
 
 .container {
-	display: grid;
-	grid-template-columns: 3fr 1fr;
-	gap: 40px;
-	padding: 40px 130px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 40px;
+  padding: 40px 130px;
+}
+
+main {
+  display: grid;
+  align-content: start;
+  gap: 20px;
 }
 
 header {
@@ -35,14 +58,14 @@ header {
 }
 
 header > img {
-	padding: 16px 40px;
-	cursor: pointer;
+  padding: 16px 40px;
+  cursor: pointer;
 }
 
 header > nav {
-	display: flex;
-	border-right: 1px solid #f4f4f4;
-	border-left: 1px solid #f4f4f4;
+  display: flex;
+  border-right: 1px solid #f4f4f4;
+  border-left: 1px solid #f4f4f4;
 }
 
 header > nav a,
@@ -56,22 +79,22 @@ header > a {
 
 header > nav a:hover,
 header > a:hover {
-	background-color: #f4f4f4;
+  background-color: #f4f4f4;
 }
 
 header > nav > a:nth-child(4) i {
-	position: relative;
+  position: relative;
 }
 
 header > nav > a:nth-child(4) i::after {
-	content: '';
-	background: url(./img/count.svg);
-	display: inline-block;
-	position: absolute;
-	right: -5px;
-	top: -5px;
-	width: 16px;
-	height: 16px;
+  content: "";
+  background: url(./img/count.svg);
+  display: inline-block;
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  width: 16px;
+  height: 16px;
 }
 
 header > form {
@@ -82,206 +105,253 @@ header > form {
 }
 
 header > form i {
-	margin-right: 24px;
-	width: 24px;
-	cursor: pointer;
+  margin-right: 24px;
+  width: 24px;
+  cursor: pointer;
 }
 
 header > form input {
-	border: none;
-	outline: none;
-	font-size: 16px;
+  border: none;
+  outline: none;
+  font-size: 16px;
 }
 
 header > form input:focus {
-	border-bottom: 1px solid #181818;
+  border-bottom: 1px solid #181818;
 }
 
 header > form input::placeholder {
-	color: #cecece;
+  color: #cecece;
 }
 
 header > div {
-	display: flex;
-	gap: 16px;
-	padding: 16px 100px 16px 32px;
-	border-right: 1px solid #f4f4f4;
+  display: flex;
+  gap: 16px;
+  padding: 16px 100px 16px 32px;
+  border-right: 1px solid #f4f4f4;
 }
 
 header > div > div {
-	display: grid;
-	gap: 10px;
+  display: grid;
+  gap: 10px;
 }
 
 header > div > div > div:first-child {
-	display: flex;
-	gap: 10px;
-	font-weight: bold;
+  display: flex;
+  gap: 10px;
+  font-weight: bold;
 }
 
 header > div > div > div:first-child > span:last-child {
-	color: #18181833;
+  color: #18181833;
 }
 
 header > div > div > div:last-child {
-	white-space: nowrap;
+  white-space: nowrap;
 }
 
 header > div > div > div:last-child > span {
-	color: #747474;
-	display: flex;
-	gap: 4px;
+  color: #747474;
+  display: flex;
+  gap: 4px;
 }
 
 header > div > div > div:last-child > span > span {
-	color: #02b033;
-	font-weight: bold;
+  color: #02b033;
+  font-weight: bold;
 }
 
 header > a {
-	border-right: 1px solid #f4f4f4;
-	padding: 16px 24px;
+  border-right: 1px solid #f4f4f4;
+  padding: 16px 24px;
 }
 
 /* ---- PROFILE ----- */
 .profile > div:first-child {
-	width: 850px;
-	height: 180px;
-	padding: 20px 30px;
-	background: url(./img/profileBackground.png);
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
+  width: 850px;
+  height: 180px;
+  padding: 20px 30px;
+  background: url(./img/profileBackground.png);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .profile > div:first-child > div {
-	display: flex;
+  display: flex;
 }
 
 .profile > div:first-child > div > button:first-child {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .profile > div:first-child > div > button:first-child img {
-	margin-right: 10px;
+  margin-right: 10px;
 }
 
 .profile > div:first-child > div > button:nth-child(2) {
-	margin-left: 10px;
+  margin-left: 10px;
 }
 
 .profile > div:nth-child(2) {
-	background-color: #fff;
-	width: 850px;
-	height: 180px;
-	display: flex;
-	gap: 25px;
-	padding: 25px;
+  background-color: #fff;
+  width: 850px;
+  height: 180px;
+  display: flex;
+  gap: 25px;
+  padding: 25px;
 }
 
 .profile > div:nth-child(2) > img {
-	width: 170px;
-	height: 170px;
-	position: relative;
-	top: -45px;
+  width: 170px;
+  height: 170px;
+  position: relative;
+  top: -45px;
 }
 
 .profile > div:nth-child(2) > div {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	padding-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 12px;
 }
 
 .profile > div:nth-child(2) > div span {
-	display: flex;
+  display: flex;
 }
 
 .profile > div:nth-child(2) > div > span {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 
 .profile > div:nth-child(2) > div > p {
-	font-size: 14px;
+  font-size: 14px;
 }
 
 .profile > div:nth-child(2) > div > span span {
-	align-items: center;
+  align-items: center;
 }
 
 .profile > div:nth-child(2) > div > span:first-child p {
-	font-size: 18px;
-	font-weight: bolder;
+  font-size: 18px;
+  font-weight: bolder;
 }
 
 .profile > div:nth-child(2) > div > span > span:first-child > img {
-	width: 16px;
-	height: 16px;
-	margin-left: 8px;
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
 }
 
 .profile > div:nth-child(2) > div > span > span:nth-child(2) img {
-	margin-right: 8px;
+  margin-right: 8px;
 }
 
 .profile > div:nth-child(2) > div > div:last-child > button:first-child {
-	margin-right: 16px;
+  margin-right: 16px;
 }
 
 /* Buttons */
 
 button {
-	width: 170px;
-	height: 32px;
-	font-size: 12px;
-	text-align: center;
-	border: none;
-	border-radius: 4px;
+  width: 170px;
+  height: 32px;
+  font-size: 12px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
 }
 .primary {
-	background: linear-gradient(#0077b5 100%, #0e6795 100%);
-	color: white;
+  background: linear-gradient(#0077b5 100%, #0e6795 100%);
+  color: white;
 }
 
 .primary:hover {
-	background: white;
-	color: #0275b1;
-	border: 1px solid #0275b1;
+  background: white;
+  color: #0275b1;
+  border: 1px solid #0275b1;
 }
 
 .secondary {
-	background-color: white;
-	color: #0275b1;
-	border: 1px solid #0275b1;
+  background-color: white;
+  color: #0275b1;
+  border: 1px solid #0275b1;
 }
 
 .secondary:hover {
-	background: linear-gradient(#0077b5 100%, #0e6795 100%);
-	color: white;
+  background: linear-gradient(#0077b5 100%, #0e6795 100%);
+  color: white;
 }
 
 .white {
-	width: auto;
-	height: 36px;
-	padding: 0 10px;
-	background-color: white;
-	color: #181818;
-	cursor: pointer;
+  width: auto;
+  height: 36px;
+  padding: 0 10px;
+  background-color: white;
+  color: #181818;
+  cursor: pointer;
+}
+
+/* About */
+.about > div:first-child > ul {
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+}
+
+.about > div:first-child > ul li {
+  background-color: #fff;
+  padding: 8px 32px;
+  border: 1px solid #e7e7e7;
+  cursor: pointer;
+  width: 240px;
+  text-align: center;
+}
+
+.about > div:first-child > ul li:first-child {
+  background: linear-gradient(180deg, #0077b5 0%, #0e6795 100%);
+  padding: 14px 64px;
+  border-radius: 4px 4px 0 0;
+  border: none;
+}
+
+.about > div:first-child > ul li:last-child {
+  border-radius: 0 4px 0 0;
+}
+
+.about > div:first-child > ul li:first-child a {
+  color: #fff;
+}
+
+.about > div:last-child {
+  background-color: #fff;
+  padding: 60px 24px 36px;
+  border-radius: 0 4px 4px 4px;
+}
+
+.about > div:last-child > h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.about > div:last-child > p {
+  margin-bottom: 20px;
+  font-size: 14px;
 }
 
 /* Aside */
 aside {
-	display: grid;
-	gap: 20px;
+  display: grid;
+  gap: 20px;
 }
 
 .dashboard,
 .visitors,
 .courses {
-	background-color: #fff;
-	padding: 24px 32px 32px;
-	border-radius: 4px;
+  background-color: #fff;
+  padding: 24px 32px 32px;
+  border-radius: 4px;
 }
 
 /* Header do aside */
@@ -294,157 +364,146 @@ aside {
   border-bottom: 1px solid #f4f4f4;
 }
 
-.dashboard a,
-.visitors a,
-.courses a {
-  color: #0275b1;
-}
-
-.dashboard a:first-child:hover,
-.visitors > div:first-child a:hover {
-  text-decoration: underline;
-}
-
 /* Títulos do aside */
 aside h5:hover {
-	cursor: pointer;
-	color: #0275b1;
-	text-decoration: underline;
+  cursor: pointer;
+  color: #0275b1;
+  text-decoration: underline;
 }
 
 /* Dashboard números */
 .dashboard > div:last-child {
-	display: grid;
-	gap: 20px;
-	padding-top: 10px;
+  display: grid;
+  gap: 20px;
+  padding-top: 10px;
 }
 
 .dashboard > div:nth-child(n + 2) p {
-	color: #0275b1;
-	font-size: 52px;
-	font-weight: bold;
+  color: #0275b1;
+  font-size: 52px;
+  font-weight: bold;
 }
 
 .dashboard > div:nth-child(n + 2) span {
-	font-size: 14px;
+  font-size: 14px;
 }
 
 /* Visitors */
 .visitors > div:last-child {
-	display: grid;
-	gap: 15px;
-	padding-top: 20px;
+  display: grid;
+  gap: 15px;
+  padding-top: 20px;
 }
 
 .visitors > div:last-child > div a {
-	display: flex;
-	align-items: center;
-	gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .visitors > div:last-child > div h5 {
-	font-size: 14px;
+  font-size: 14px;
 }
 
 .visitors > div:last-child > div span {
-	font-size: 10px;
+  font-size: 10px;
 }
 
 /* Courses */
 .courses > div:last-child {
-	display: grid;
-	gap: 15px;
-	padding-top: 20px;
+  display: grid;
+  gap: 15px;
+  padding-top: 20px;
 }
 
 .courses > div:last-child > div a {
-	display: flex;
-	align-items: center;
-	gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .courses > div:last-child > div h5 {
-	font-size: 14px;
-	margin-bottom: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .courses > div:last-child > a {
-	color: #0275b1;
-	font-weight: bold;
-	margin-top: 10px;
+  color: #0275b1;
+  font-weight: bold;
+  margin-top: 10px;
 }
 .courses > div:last-child > a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* -------- footer --------- */
 footer {
-	height: 215px;
-	background: linear-gradient(
-		#f1f4f8cc 0%,
-		rgba(241, 244, 248, 0) 50%,
-		#f7f9fb 50% 100%
-	);
+  height: 215px;
+  background: linear-gradient(
+    #f1f4f8cc 0%,
+    rgba(241, 244, 248, 0) 50%,
+    #f7f9fb 50% 100%
+  );
 
-	padding: 30px 0 50px 0;
-	display: flex;
-	justify-content: space-around;
+  padding: 30px 0 50px 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 footer h6 {
-	font-weight: 600;
-	font-size: 12px;
-	margin-bottom: 22px;
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 22px;
 }
 
 footer > div:first-child {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 footer > div:first-child > img:first-child {
-	width: 46px;
-	height: 46px;
-	margin-bottom: 14px;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 14px;
 }
 
 footer > div:first-child > img:last-child {
-	width: 61px;
+  width: 61px;
 }
 
 footer > div:nth-child(2) nav {
-	height: 100px;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-column-gap: 35px;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 35px;
 }
 
 footer > div:nth-child(3) {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 footer > div:nth-child(3) button {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 10px 14px;
-	margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  margin-bottom: 10px;
 }
 
 footer > div:nth-child(3) button img {
-	width: 16px;
-	height: 16px;
+  width: 16px;
+  height: 16px;
 }
 
 footer > div:last-child select {
-	width: 270px;
-	height: 32px;
-	background-color: white;
-	border: 1px solid #f0f0f0;
-	padding: 4px 15px;
+  width: 270px;
+  height: 32px;
+  background-color: white;
+  border: 1px solid #f0f0f0;
+  padding: 4px 15px;
 }
 
 footer > div:last-child optgroup {
-	font-size: 20px;
+  font-size: 20px;
 }
