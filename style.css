@@ -385,23 +385,23 @@ main > section h3 {
 /* -------- Experience & Education -------- */
 .experience,
 .education {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 4px;
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 4px;
 }
 
 .experience > div,
 .education > div {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #f4f4f4;
+	display: flex;
+	align-items: flex-start;
+	gap: 16px;
+	padding-bottom: 24px;
+	border-bottom: 1px solid #f4f4f4;
 }
 
 .experience > div img,
 .education > div img {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .experience > div:last-child {
@@ -410,30 +410,30 @@ main > section h3 {
 }
 
 .education > div {
-  padding-bottom: 0;
-  border: none;
+	padding-bottom: 0;
+	border: none;
 }
 
 .experience > div > div,
 .education > div > div {
-  display: grid;
-  gap: 10px;
+	display: grid;
+	gap: 10px;
 }
 
 .experience > div > div h4,
 .education > div > div h4 {
-  font-size: 14px;
-  cursor: pointer;
+	font-size: 14px;
+	cursor: pointer;
 }
 
 .experience > div > div h4:hover,
 .education > div > div h4:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .experience > div > div > div > div:first-child,
 .education > div > div > div p {
-  margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .experience > div > div > div > div span {
@@ -634,6 +634,71 @@ aside h5:hover {
 	color: #0275b1;
 	font-weight: 700;
 	line-height: 21px;
+}
+
+/* ---- **FEED** ---- */
+
+/* New Post */
+
+.new-post {
+	background-color: white;
+	border-radius: 4px;
+	padding: 30px;
+	padding-top: 24px;
+}
+
+.new-post h4 {
+	border-bottom: 1px solid #f4f4f4;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+}
+
+.new-post input {
+	width: 450px;
+	height: 30px;
+	padding: 4px;
+	border: none;
+	font-size: 18px;
+}
+
+.new-post input:focus {
+	outline: none;
+}
+
+.new-post input::placeholder {
+	color: #18181833;
+	font-size: 18px;
+}
+
+.new-post > div {
+	display: flex;
+	justify-content: space-between;
+}
+
+.new-post > div > div {
+	display: flex;
+	align-items: center;
+}
+
+.new-post > div > div > img {
+	padding: 8px;
+	border-radius: 4px;
+	margin-left: 20px;
+}
+.new-post > div > div > img:hover {
+	cursor: pointer;
+	background-color: #f4f4f4;
+}
+
+.new-post > div > div img:last-child {
+	background: linear-gradient(#0077b5, #0e6795);
+	padding: 8px;
+	border-radius: 4px;
+}
+
+.new-post > div > div img:last-child:hover {
+	background: #0e6795;
+	cursor: pointer;
 }
 
 /* -------- footer --------- */
