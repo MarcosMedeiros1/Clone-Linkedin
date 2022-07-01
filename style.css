@@ -29,9 +29,9 @@ img {
 }
 
 header {
-  display: flex;
-  justify-content: center;
-  background-color: #fff;
+	display: flex;
+	justify-content: center;
+	background-color: #fff;
 }
 
 header > img {
@@ -47,11 +47,11 @@ header > nav {
 
 header > nav a,
 header > a {
-  display: grid;
-  justify-items: center;
-  font-weight: bold;
-  padding: 16px 32px;
-  transition: 0.3s;
+	display: grid;
+	justify-items: center;
+	font-weight: bold;
+	padding: 16px 32px;
+	transition: 0.3s;
 }
 
 header > nav a:hover,
@@ -75,10 +75,10 @@ header > nav > a:nth-child(4) i::after {
 }
 
 header > form {
-  display: flex;
-  align-items: center;
-  padding: 0 60px;
-  border-right: 1px solid #f4f4f4;
+	display: flex;
+	align-items: center;
+	padding: 0 60px;
+	border-right: 1px solid #f4f4f4;
 }
 
 header > form i {
@@ -288,21 +288,21 @@ aside {
 .dashboard > div:first-child,
 .visitors > div:first-child,
 .courses > div:first-child {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #f4f4f4;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #f4f4f4;
 }
 
 .dashboard a,
 .visitors a,
 .courses a {
-  color: #0275b1;
+	color: #0275b1;
 }
 
 .dashboard a:first-child:hover,
 .visitors > div:first-child a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 /* Títulos do aside */
@@ -377,6 +377,24 @@ aside h5:hover {
 	text-decoration: underline;
 }
 
+/* --------- Projects --------- */
+
+.projects > h3 > span {
+	color: #747474;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.projects > div {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.projects > div > small {
+	font-size: 10px;
+	color: #181818;
+}
+
 /* -------- footer --------- */
 footer {
 	height: 215px;
@@ -445,6 +463,25 @@ footer > div:last-child select {
 	padding: 4px 15px;
 }
 
-footer > div:last-child optgroup {
-	font-size: 20px;
+footer > div:last-child select {
+	/* make arrow and background */
+
+	/* background: linear-gradient(45deg, transparent 50%, blue 50%),
+		linear-gradient(135deg, blue 50%, transparent 50%),
+		linear-gradient(45deg, transparent 36%, pink 36%, pink 100%),
+		linear-gradient(135deg, green 51%, blueviolet 100%);
+
+	background-position: calc(100% - 21px) calc(1em + 2px),
+		calc(100% - 16px) calc(1em + 2px), 100% 0;
+	background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+	background-repeat: no-repeat; */
+
+	/* styling and reset */
+	font: 600 12px/100% 'Montserrat', sans-serif;
+	line-height: 1.5em;
+	padding: 0.5em 3.5em 0.5em 1em;
+
+	/* reset */
+	-webkit-appearance: none;
+	-moz-appearance: none;
 }
