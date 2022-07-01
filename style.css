@@ -370,3 +370,75 @@ aside h5:hover {
 .courses > div:last-child > a:hover {
 	text-decoration: underline;
 }
+
+/* -------- footer --------- */
+footer {
+	height: 215px;
+	background: linear-gradient(
+		#f1f4f8cc 0%,
+		rgba(241, 244, 248, 0) 50%,
+		#f7f9fb 50% 100%
+	);
+
+	padding: 30px 0 50px 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+footer h6 {
+	font-weight: 600;
+	font-size: 12px;
+	margin-bottom: 22px;
+}
+
+footer > div:first-child {
+	display: flex;
+	flex-direction: column;
+}
+
+footer > div:first-child > img:first-child {
+	width: 46px;
+	height: 46px;
+	margin-bottom: 14px;
+}
+
+footer > div:first-child > img:last-child {
+	width: 61px;
+}
+
+footer > div:nth-child(2) nav {
+	height: 100px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 35px;
+}
+
+footer > div:nth-child(3) {
+	display: flex;
+	flex-direction: column;
+}
+
+footer > div:nth-child(3) button {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 14px;
+	margin-bottom: 10px;
+}
+
+footer > div:nth-child(3) button img {
+	width: 16px;
+	height: 16px;
+}
+
+footer > div:last-child select {
+	width: 270px;
+	height: 32px;
+	background-color: white;
+	border: 1px solid #f0f0f0;
+	padding: 4px 15px;
+}
+
+footer > div:last-child optgroup {
+	font-size: 20px;
+}
