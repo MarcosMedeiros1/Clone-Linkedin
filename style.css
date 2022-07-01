@@ -21,6 +21,13 @@ img {
   max-width: 100%;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 40px;
+  padding: 40px 130px;
+}
+
 header {
   display: flex;
   background-color: #fff;
@@ -133,4 +140,106 @@ header > div > div > div:last-child > span > span {
 header > a {
   border-right: 1px solid #f4f4f4;
   padding: 16px 24px;
+}
+
+/* Aside */
+aside {
+  display: grid;
+  gap: 20px;
+}
+
+.dashboard,
+.visitors,
+.courses {
+  background-color: #fff;
+  padding: 24px 32px 32px;
+  border-radius: 4px;
+}
+
+/* Header do aside */
+.aside-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.aside-header a {
+  color: #0275b1;
+}
+
+.aside-header a:hover {
+  text-decoration: underline;
+}
+
+/* Títulos do aside */
+aside h5:hover {
+  cursor: pointer;
+  color: #0275b1;
+  text-decoration: underline;
+}
+
+/* Dashboard números */
+.dashboard > div:last-child {
+  display: grid;
+  gap: 20px;
+  padding-top: 10px;
+}
+
+.dashboard > div:nth-child(n + 2) p {
+  color: #0275b1;
+  font-size: 52px;
+  font-weight: bold;
+}
+
+.dashboard > div:nth-child(n + 2) span {
+  font-size: 14px;
+}
+
+/* Visitors */
+.visitors > div:last-child {
+  display: grid;
+  gap: 15px;
+  padding-top: 20px;
+}
+
+.visitors > div:last-child > div a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.visitors > div:last-child > div h5 {
+  font-size: 14px;
+}
+
+.visitors > div:last-child > div span {
+  font-size: 10px;
+}
+
+/* Courses */
+.courses > div:last-child {
+  display: grid;
+  gap: 15px;
+  padding-top: 20px;
+}
+
+.courses > div:last-child > div a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.courses > div:last-child > div h5 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.courses > div:last-child > a {
+  color: #0275b1;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.courses > div:last-child > a:hover {
+  text-decoration: underline;
 }
