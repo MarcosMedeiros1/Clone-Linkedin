@@ -448,18 +448,42 @@ aside h5:hover {
 
 /* --------- Projects --------- */
 
+.projects {
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 4px;
+}
+
+.projects h3 {
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+
 .projects > h3 > span {
 	color: #747474;
 	font-size: 18px;
 	font-weight: 300;
+	margin-left: 15px;
 }
 
 .projects > div {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	margin-bottom: 20px;
 }
 
-.projects > div > small {
+.projects > div > div > img {
+	margin-bottom: 15px;
+}
+
+.projects h4 {
+	font-size: 14px;
+	line-height: 21px;
+	margin-bottom: 5px;
+}
+
+.projects > div > div > small {
 	font-size: 10px;
 	color: #181818;
 }
