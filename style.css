@@ -142,6 +142,132 @@ header > a {
   padding: 16px 24px;
 }
 
+/* ---- PROFILE ----- */
+main > div > div:first-child {
+  width: 850px;
+  height: 180px;
+  padding: 20px 30px;
+  background: url(./img/profileBackground.png);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+main > div > div:first-child > div {
+  display: flex;
+}
+
+main > div > div:first-child > div > button:first-child {
+  display: flex;
+  align-items: center;
+}
+
+main > div > div:first-child > div > button:first-child img {
+  margin-right: 10px;
+}
+
+main > div > div:first-child > div > button:nth-child(2) {
+  margin-left: 10px;
+}
+
+main > div > div:nth-child(2) {
+  background-color: #fff;
+  width: 850px;
+  height: 180px;
+  display: flex;
+  gap: 25px;
+  padding: 25px;
+}
+
+main > div > div:nth-child(2) > img {
+  width: 170px;
+  height: 170px;
+  position: relative;
+  top: -45px;
+}
+
+main > div > div:nth-child(2) > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main > div > div:nth-child(2) > div span {
+  display: flex;
+}
+
+main > div > div:nth-child(2) > div > span {
+  justify-content: space-between;
+}
+
+main > div > div:nth-child(2) > div > p {
+  font-size: 14px;
+}
+
+main > div > div:nth-child(2) > div > span span {
+  align-items: center;
+}
+
+main > div > div:nth-child(2) > div > span:first-child p {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+main > div > div:nth-child(2) > div > span > span:first-child > img {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+}
+
+main > div > div:nth-child(2) > div > span > span:nth-child(2) img {
+  margin-right: 8px;
+}
+
+main > div > div:nth-child(2) > div > div:last-child > button:first-child {
+  margin-right: 16px;
+}
+
+/* Buttons */
+
+button {
+  width: 170px;
+  height: 32px;
+  font-size: 12px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+}
+.primary {
+  background: linear-gradient(#0077b5 100%, #0e6795 100%);
+  color: white;
+}
+
+.primary:hover {
+  background: white;
+  color: #0275b1;
+  border: 1px solid #0275b1;
+}
+
+.secondary {
+  background-color: white;
+  color: #0275b1;
+  border: 1px solid #0275b1;
+}
+
+.secondary:hover {
+  background: linear-gradient(#0077b5 100%, #0e6795 100%);
+  color: white;
+}
+
+.white {
+  width: auto;
+  height: 36px;
+  padding: 0 10px;
+  background-color: white;
+  color: #181818;
+  cursor: pointer;
+}
+
 /* Aside */
 aside {
   display: grid;
