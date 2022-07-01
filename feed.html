@@ -78,7 +78,34 @@
 	</header>
 
 	<div class="container">
-		<section></section>
+		<main>
+			<!-- New Post -->
+			<section class="new-post">
+				<h4>NEW POST</h4>
+				<div>
+					<form>
+						<input type="text" placeholder="What’s on your mind?" />
+					</form>
+					<div>
+						<img src="./img/paperclip.png" alt="Clip" />
+						<img src="./img/image.png" alt="Imagem" />
+						<img src="./img/film.png" alt="Video" />
+						<img src="./img/send.png" alt="Enviar" />
+					</div>
+				</div>
+			</section>
+
+			<div class="sort">
+				<form>
+					<label for="sort">SORT BY: </label>
+					<select name="sort" id="sort">
+						<option value="en">TRENDING</option>
+						<option value="pt">RECENT</option>
+					</select>
+				</form>
+			</div>
+		</main>
+
 		<aside>
 			<section class="profile-mini">
 				<img src="./img/userImg1.png" alt="">
@@ -135,6 +162,7 @@
 				</div>
 			</section>
 
+			<!-- Trnding -->
 			<section class="trending">
 				<div>
 					<h4>TRENDING ARTICLES</h4>
@@ -170,7 +198,6 @@
 							</div>
 						</a>
 					</div>
-
 				</div>
 			</section>
 
@@ -211,6 +238,7 @@
 				<img src="./img/settings.png" alt="Settings Icon" />
 			</button>
 		</div>
+
 
 		<div>
 			<h6>Language</h6>
