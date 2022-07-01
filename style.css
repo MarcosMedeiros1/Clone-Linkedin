@@ -40,7 +40,7 @@ button {
 
 .container {
 	display: grid;
-	grid-template-columns: 3fr 1fr;
+	grid-template-columns: 2fr 1fr;
 	gap: 40px;
 	padding: 40px 130px;
 }
@@ -293,7 +293,13 @@ button {
 	cursor: pointer;
 }
 
-/* About */
+/* h3 das sections */
+main > section h3 {
+	font-size: 18px;
+	margin-bottom: 24px;
+}
+
+/* --------- About --------- */
 .about > div:first-child > ul {
 	display: flex;
 	align-items: flex-end;
@@ -338,6 +344,98 @@ button {
 .about > div:last-child > p {
 	margin-bottom: 20px;
 	font-size: 14px;
+}
+
+/* --------- Projects --------- */
+.projects {
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 4px;
+}
+
+.projects > h3 > span {
+	color: #747474;
+	font-size: 18px;
+	font-weight: 300;
+	margin-left: 15px;
+}
+
+.projects > div {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	margin-bottom: 20px;
+}
+
+.projects > div > div > img {
+	margin-bottom: 15px;
+}
+
+.projects h4 {
+	font-size: 14px;
+	line-height: 21px;
+	margin-bottom: 5px;
+}
+
+.projects > div > div > small {
+	font-size: 10px;
+	color: #181818;
+}
+
+/* -------- Experience -------- */
+.experience {
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 4px;
+}
+
+.experience > div {
+	display: flex;
+	align-items: flex-start;
+	gap: 16px;
+	padding-bottom: 24px;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.experience > div img {
+	cursor: pointer;
+}
+
+.experience > div:last-child {
+	padding: 20px 0 0;
+	border: none;
+}
+
+.experience > div > div {
+	display: grid;
+	gap: 10px;
+}
+
+.experience > div > div h4 {
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.experience > div > div h4:hover {
+	text-decoration: underline;
+}
+
+.experience > div > div > div > div:first-child {
+	margin-bottom: 5px;
+}
+
+.experience > div > div > div > div span {
+	margin-right: 10px;
+	font-size: 10px;
+}
+
+.experience > div > div > div > div:first-child span:first-child {
+	font-weight: bold;
+}
+
+.experience > div > div > div > div:last-child span:last-child {
+	color: #0275b1;
+	font-weight: bold;
 }
 
 /* Aside */
