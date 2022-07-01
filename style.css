@@ -478,6 +478,11 @@ aside h5:hover {
 
 .projects > div > div > img {
 	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.skills > div > div > img {
+	margin-top: 10px;
 }
 
 .projects h4,
@@ -487,8 +492,13 @@ aside h5:hover {
 	margin-bottom: 5px;
 }
 
+.projects h4:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
 .projects > div > div > small {
-	font-size: 10px;
+	font-size: 12px;
 	color: #181818;
 }
 
@@ -496,6 +506,12 @@ aside h5:hover {
 	border: 1px solid #f4f4f4;
 	border-radius: 6px;
 	padding: 14px 20px;
+}
+
+.skills > div > div:hover {
+	cursor: pointer;
+	background-color: #f4f4f4;
+	border: 1px solid #0077b5;
 }
 
 .skills > div > div > div h4 {
