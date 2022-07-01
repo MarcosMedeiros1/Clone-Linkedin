@@ -39,11 +39,11 @@ button {
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 850px 290px;
-  justify-content: center;
-  gap: 40px;
-  padding: 40px 130px;
+	display: grid;
+	grid-template-columns: 850px 290px;
+	justify-content: center;
+	gap: 40px;
+	padding: 40px 130px;
 }
 
 main {
@@ -473,10 +473,10 @@ aside {
 .groups > div:first-child,
 .hashtags > div:first-child,
 .trending > div:first-child {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #f4f4f4;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #f4f4f4;
 }
 
 .dashboard a:first-child:hover,
@@ -532,22 +532,22 @@ aside h5:hover {
 /* Courses */
 .courses > div:last-child,
 .trending > div:last-child {
-  display: grid;
-  gap: 15px;
-  padding-top: 20px;
+	display: grid;
+	gap: 15px;
+	padding-top: 20px;
 }
 
 .courses > div:last-child > div a,
 .trending > div:last-child > div a {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+	display: flex;
+	align-items: center;
+	gap: 15px;
 }
 
 .courses > div:last-child > div h5,
 .trending > div:last-child > div h5 {
-  font-size: 14px;
-  margin-bottom: 10px;
+	font-size: 14px;
+	margin-bottom: 10px;
 }
 
 .courses > div:last-child > a {
@@ -740,6 +740,14 @@ aside h5:hover {
   background-color: white;
   padding: 4px;
   margin-bottom: 20px;
+	display: grid;
+	gap: 30px;
+}
+
+.posts > div > div:nth-child(2),
+.posts > div > div:nth-child(3),
+.posts > div > a {
+	padding: 0 30px;
 }
 
 .posts > div > div:first-child {
@@ -767,6 +775,10 @@ aside h5:hover {
   padding: 15px 30px;
   align-items: center;
   gap: 15px;
+}
+
+.posts > div > div:nth-child(2) > div {
+	margin-left: 15px;
 }
 
 .posts > div > div:nth-child(2) > div p {
@@ -828,6 +840,32 @@ aside h5:hover {
 
 .posts > div > div:last-child > div a {
   margin-right: 20px;
+	margin-top: -20px;
+}
+
+.posts > div > a {
+	padding: 0 30px;
+}
+
+.posts > div > div:last-child {
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid black;
+}
+
+.posts > div > div:last-child > div > a {
+	padding: 20px 30px;
+	border-right: 1px solid #f4f4f4;
+}
+
+.posts > div > div:last-child > div a img,
+.posts > div > div:last-child > a img {
+	margin-right: 4px;
+}
+
+.posts > div > div:last-child > a {
+	padding: 20px 30px;
+	border-left: 1px solid #f4f4f4;
 }
 
 /* -------- footer --------- */
@@ -925,84 +963,84 @@ footer > div:last-child select {
 
 /* Aside */
 .profile-mini {
-  background: url(img/Rectangle-3.png);
-  background-repeat: no-repeat;
-  background-color: #fff;
-  padding: 64px 24px 24px;
-  display: grid;
-  justify-items: center;
-  text-align: center;
-  border-radius: 0 0 4px 4px;
+	background: url(img/Rectangle-3.png);
+	background-repeat: no-repeat;
+	background-color: #fff;
+	padding: 64px 24px 24px;
+	display: grid;
+	justify-items: center;
+	text-align: center;
+	border-radius: 0 0 4px 4px;
 }
 
 .profile-mini h5 {
-  font-size: 14px;
-  margin: 14px 0 10px;
+	font-size: 14px;
+	margin: 14px 0 10px;
 }
 
 /* New article */
 .new-article {
-  text-align: center;
-  background-color: #fff;
-  padding: 20px;
+	text-align: center;
+	background-color: #fff;
+	padding: 20px;
 }
 
 .new-article > button {
-  width: 230px;
+	width: 230px;
 }
 
 /* Groups */
 .groups,
 .hashtags,
 .trending {
-  padding: 24px 30px;
-  background-color: #fcfdfd;
-  border-radius: 4px;
+	padding: 24px 30px;
+	background-color: #fcfdfd;
+	border-radius: 4px;
 }
 
 .groups > div:nth-child(2) {
-  padding: 20px 0;
+	padding: 20px 0;
 }
 
 .groups > div > a {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 10px;
-  padding: 14px;
-  background-color: #fff;
-  border: 1px solid #f4f4f4;
-  border-radius: 6px;
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	margin-bottom: 10px;
+	padding: 14px;
+	background-color: #fff;
+	border: 1px solid #f4f4f4;
+	border-radius: 6px;
 }
 
 .groups > div > a > h5 {
-  text-decoration: none;
-  color: #181818;
+	text-decoration: none;
+	color: #181818;
 }
 
 .groups > div > a:hover {
-  background-color: #f4f4f4;
-  border: 1px solid #0077b5;
+	background-color: #f4f4f4;
+	border: 1px solid #0077b5;
 }
 
 .groups > div > a > h5 {
-  font-size: 14px;
+	font-size: 14px;
 }
 
 /* Hashtags */
 .hashtags > div:last-child {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  padding: 20px 0;
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	padding: 20px 0;
 }
 
 .hashtags > div:last-child > a {
-  padding: 14px;
-  background-color: #e9f0f8;
-  border-radius: 4px;
+	padding: 14px;
+	background-color: #e9f0f8;
+	border-radius: 4px;
 }
 
 .hashtags > div:last-child > a:hover {
-  background-color: #cde1f9;
+	background-color: #cde1f9;
 }
