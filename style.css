@@ -137,8 +137,7 @@ header > a {
 
 /* ---- PROFILE ----- */
 main {
-	max-width: 1200px;
-	margin: 40px auto;
+	margin: 40px 130px;
 	display: grid;
 	grid-template-columns: 850px 290px;
 	justify-items: center;
