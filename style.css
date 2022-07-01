@@ -21,6 +21,19 @@ body {
 	font-size: 12px;
 }
 
+h3 {
+	font-size: 18px;
+}
+
+h4,
+h5 {
+	font-size: 14px;
+}
+
+small {
+	font-size: 12px;
+}
+
 img {
 	max-width: 100%;
 }
@@ -296,7 +309,6 @@ button {
 
 /* h3 das sections */
 main > section h3 {
-	font-size: 18px;
 	margin-bottom: 24px;
 }
 
@@ -338,7 +350,6 @@ main > section h3 {
 }
 
 .about > div:last-child > h3 {
-	font-size: 18px;
 	margin-bottom: 16px;
 }
 
@@ -356,7 +367,6 @@ main > section h3 {
 
 .projects > h3 > span {
 	color: #747474;
-	font-size: 18px;
 	font-weight: 300;
 	margin-left: 15px;
 }
@@ -373,13 +383,11 @@ main > section h3 {
 }
 
 .projects h4 {
-	font-size: 14px;
 	line-height: 21px;
 	margin-bottom: 5px;
 }
 
 .projects > div > div > small {
-	font-size: 10px;
 	color: #181818;
 }
 
@@ -423,7 +431,6 @@ main > section h3 {
 
 .experience > div > div h4,
 .education > div > div h4 {
-	font-size: 14px;
 	cursor: pointer;
 }
 
@@ -521,10 +528,6 @@ aside h5:hover {
 	gap: 15px;
 }
 
-.visitors > div:last-child > div h5 {
-	font-size: 14px;
-}
-
 .visitors > div:last-child > div span {
 	font-size: 10px;
 }
@@ -546,7 +549,6 @@ aside h5:hover {
 
 .courses > div:last-child > div h5,
 .trending > div:last-child > div h5 {
-	font-size: 14px;
 	margin-bottom: 10px;
 }
 
@@ -568,15 +570,8 @@ aside h5:hover {
 	border-radius: 4px;
 }
 
-.projects h3,
-.skills h3 {
-	font-size: 18px;
-	margin-bottom: 16px;
-}
-
 .projects > h3 > span {
 	color: #747474;
-	font-size: 18px;
 	font-weight: 300;
 	margin-left: 15px;
 }
@@ -600,7 +595,6 @@ aside h5:hover {
 
 .projects h4,
 .skills h4 {
-	font-size: 14px;
 	line-height: 21px;
 	margin-bottom: 5px;
 }
@@ -611,7 +605,6 @@ aside h5:hover {
 }
 
 .projects > div > div > small {
-	font-size: 12px;
 	color: #181818;
 }
 
@@ -651,6 +644,7 @@ aside h5:hover {
 }
 
 .new-post h4 {
+	font-size: 12px;
 	border-bottom: 1px solid #f4f4f4;
 	padding-bottom: 20px;
 	margin-bottom: 30px;
@@ -759,7 +753,6 @@ aside h5:hover {
 }
 
 .posts > div > div:first-child small {
-	font-size: 12px;
 	color: #181818;
 }
 
@@ -784,10 +777,6 @@ aside h5:hover {
 .posts > div > div:nth-child(2) > div p {
 	font-size: 14px;
 	font-weight: 600;
-}
-
-.posts > div > div:nth-child(2) > div small {
-	font-size: 12px;
 }
 
 .posts > div:nth-child(3) > div:nth-child(3) > div {
@@ -953,7 +942,6 @@ footer > div:last-child select {
 }
 
 .profile-mini h5 {
-	font-size: 14px;
 	margin: 14px 0 10px;
 }
 
@@ -1000,10 +988,6 @@ footer > div:last-child select {
 .groups > div > a:hover {
 	background-color: #f4f4f4;
 	border: 1px solid #0077b5;
-}
-
-.groups > div > a > h5 {
-	font-size: 14px;
 }
 
 /* Hashtags */
