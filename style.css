@@ -503,6 +503,7 @@ aside h5:hover {
 }
 
 .skills > div > div {
+	width: 250px;
 	border: 1px solid #f4f4f4;
 	border-radius: 6px;
 	padding: 14px 20px;
@@ -514,9 +515,9 @@ aside h5:hover {
 	border: 1px solid #0077b5;
 }
 
-.skills > div > div > div h4 {
-	display: inline;
-	margin-right: 50px;
+.skills > div > div > div {
+	display: flex;
+	justify-content: space-between;
 }
 
 .skills > div > div > div span {
