@@ -729,6 +729,7 @@ aside h5:hover {
 	padding: 0.5em 3.5em 0.5em 1em;
 	border: none;
 	background: none;
+	cursor: pointer;
 }
 
 /* -------- footer --------- */
