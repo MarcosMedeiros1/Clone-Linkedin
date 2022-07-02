@@ -729,7 +729,7 @@ aside h5:hover {
 }
 
 .sort select {
-	width: 100px;
+	width: 140px;
 	font: 600 12px/100% 'Montserrat', sans-serif;
 	color: #0275b1;
 	line-height: 12px;
@@ -773,6 +773,13 @@ aside h5:hover {
 
 .posts > div > div:first-child a:hover {
 	text-decoration: underline;
+}
+
+.transparencia {
+	background: linear-gradient(#333, #eee);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .posts > div > div:nth-child(2) {
@@ -1034,11 +1041,4 @@ footer > div:last-child form::after {
 
 .hashtags > div:last-child > a:hover {
 	background-color: #cde1f9;
-}
-
-.transparencia {
-	background: linear-gradient(#333, #eee);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 }
