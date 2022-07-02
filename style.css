@@ -19,6 +19,7 @@ body {
   background-color: #f7f9fb;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
+  overflow-x: hidden;
 }
 
 h3 {
@@ -246,6 +247,7 @@ header > a {
   display: flex;
   gap: 25px;
   padding: 25px;
+  border-radius: 0 0 4px 4px;
 }
 
 .profile > div:nth-child(2) > img {
@@ -407,6 +409,7 @@ main > section h3 {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   margin-bottom: 20px;
+  gap: 10px;
 }
 
 .projects > div > div > img {
@@ -523,6 +526,11 @@ aside {
 }
 
 /* Títulos do aside */
+
+aside h4 {
+  font-size: 12px;
+}
+
 aside h5:hover {
   cursor: pointer;
   color: #0275b1;
